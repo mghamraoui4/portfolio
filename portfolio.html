@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Ghamraoui | Fullstack Developer | Casablanca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">Mohamed Ghamraoui</div>
+            <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
+                <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-gray-700" id="menuBtn">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-100 px-4 py-3">
+            <ul class="flex flex-col gap-3 text-gray-700 font-medium">
+                <li><a href="#home" class="block py-2 hover:text-blue-600">Home</a></li>
+                <li><a href="#projects" class="block py-2 hover:text-blue-600">Projects</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto text-center">
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg bg-gray-300 flex items-center justify-center">
+                <i class="fas fa-user text-6xl text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Technicien Réseaux & Développeur Fullstack</h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-4">Java | Spring Boot | React.js | Tailwind CSS</p>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Développeur Fullstack spécialisé dans la conception d'applications métiers critiques et l'automatisation de processus complexes. Expert en Java (Spring Boot) et React.js basé à Casablanca.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:mghamraoui4@gmail.com" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition transform hover:scale-105">
+                    📧 Email
+                </a>
+                <a href="tel:+212663144361" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition transform hover:scale-105">
+                    📞 Appeler
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 md:py-24 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Mes Compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Backend Skills -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-server text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Backend & Data</h3>
+                    <p class="text-gray-600">Java 17+, Spring Boot 3, Spring Security (JWT), Hibernate/JPA, MySQL, PostgreSQL, Oracle SQL</p>
+                </div>
+                <!-- Frontend Skills -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-paint-brush text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Frontend</h3>
+                    <p class="text-gray-600">React 18, JavaScript (ES6+), Tailwind CSS, Lucide React, HTML5, CSS3</p>
+                </div>
+                <!-- DevOps Skills -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-cloud text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Cloud & DevOps</h3>
+                    <p class="text-gray-600">Docker, CI/CD (GitLab, GitHub Actions), Google Cloud Platform, Swagger/OpenAPI</p>
+                </div>
+                <!-- Architecture -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-chess text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Architecture</h3>
+                    <p class="text-gray-600">Clean Code, Design Patterns, TDD, Architecture Microservices</p>
+                </div>
+                <!-- Outils -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-tools text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Outils & Méthodes</h3>
+                    <p class="text-gray-600">Git, Maven, Gradle, Jira, Méthodes Agiles, Scrum</p>
+                </div>
+                <!-- Soft Skills -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                    <i class="fas fa-handshake text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Soft Skills</h3>
+                    <p class="text-gray-600">Communication multicanal, Leadership, Gestion de projet, Support client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Projets Majeurs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-tools text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">NetInventory</h3>
+                        <p class="text-gray-600 mb-2 text-sm"><strong>Système de Gestion d'Inventaire Réseau</strong></p>
+                        <p class="text-gray-600 mb-4">Architecture backend robuste avec Spring Boot 3 et JWT. Base de données MySQL optimisée. Interface réactive en React 18 avec recherche en temps réel et tableaux de bord statistiques. API documentée via Swagger.</p>
+                        <div class="mb-4">
+                            <p class="text-xs font-semibold text-gray-700 mb-2">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Java Spring Boot</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">React 18</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">MySQL</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Docker</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">12/2025 – 01/2026</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition">Détails du projet →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-cog text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Celia & Outils Métier</h3>
+                        <p class="text-gray-600 mb-2 text-sm"><strong>Plateforme d'Aide à la Décision (Rhôn'Télécom / Marjanemall)</strong></p>
+                        <p class="text-gray-600 mb-4">Création d'un outil d'aide à la décision et d'une base de connaissances dynamique pour agents help desk. Développement d'un générateur de scripts et système de réservation (nacelles). Réduction significative du temps de traitement des tickets.</p>
+                        <div class="mb-4">
+                            <p class="text-xs font-semibold text-gray-700 mb-2">Impact:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Automatisation</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Digitalisation</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Optimisation</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">04/2025 – Aujourd'hui</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition">Détails du projet →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 md:py-24 px-4 bg-white">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Get In Touch</h2>
+            <p class="text-center text-gray-600 mb-12">Have a question or want to work together? I'd love to hear from you!</p>
+            
+            <form class="space-y-6">
+                <!-- Name Field -->
+                <div>
+                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Name">
+                </div>
+                
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your.email@example.com">
+                </div>
+                
+                <!-- Message Field -->
+                <div>
+                    <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Your message..."></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition transform hover:scale-105">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mohamed Ghamraoui</h3>
+                    <p class="text-gray-400">Développeur Fullstack Java & React</p>
+                    <p class="text-gray-400">Technicien Réseaux et Telecom</p>
+                    <p class="text-gray-400">Casablanca, Maroc</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="mailto:mghamraoui4@gmail.com" class="hover:text-white transition">📧 mghamraoui4@gmail.com</a></li>
+                        <li><a href="tel:+212663144361" class="hover:text-white transition">📞 +212 663 144 361</a></li>
+                        <li><a href="#" class="hover:text-white transition">📍 Casablanca, MAR</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Suivez-moi</h4>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/Mohamed-GHAMRAOUI" class="text-gray-400 hover:text-blue-400 transition text-2xl" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-ghamraoui" class="text-gray-400 hover:text-blue-400 transition text-2xl" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:mghamraoui4@gmail.com" class="text-gray-400 hover:text-blue-400 transition text-2xl" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Mohamed Ghamraoui. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
